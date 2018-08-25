@@ -29,4 +29,7 @@ TARGET_OTA_ASSERT_DEVICE := A6020,A6020a40,A6020a41,A6020a46,A6020l36,A6020l37,K
 # Use Snapdragon LLVM, if available
 TARGET_USE_SDCLANG=true
 
-include $(LOCAL_PATH)/board/*.mk
+# Exclude serif fonts for saving system.img size.
+EXCLUDE_SERIF_FONTS := true
+
+include $(LOCAL_PATH)/msm8916.mk
