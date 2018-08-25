@@ -17,6 +17,7 @@
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
 
+#undef PROPERTY_VALUE_MAX
 #define BTM_DEF_LOCAL_NAME "Lenovo K5"
 // Disables read remote device feature
 #define BTA_SKIP_BLE_READ_REMOTE_FEAT FALSE
