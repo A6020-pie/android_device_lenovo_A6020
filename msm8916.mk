@@ -31,6 +31,10 @@ TARGET_NEEDS_LEGACY_CAMERA_HAL1_DYN_NATIVE_HANDLE := true
 BOARD_CHARGER_ENABLE_SUSPEND := true
 BACKLIGHT_PATH := /sys/class/leds/lcd-backlight/brightness
 
+# Destroyed mutex usage whitelist
+TARGET_DESTROYED_MUTEX_USAGE_WHITELIST := \
+   /vendor/bin/hw/android.hardware.camera.provider@2.4-service
+   
 # Dexpreopt
 ifeq ($(HOST_OS),linux)
 ifneq ($(TARGET_BUILD_VARIANT),eng)
