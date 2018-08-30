@@ -33,8 +33,9 @@ BACKLIGHT_PATH := /sys/class/leds/lcd-backlight/brightness
 
 # Destroyed mutex usage whitelist
 TARGET_DESTROYED_MUTEX_USAGE_WHITELIST := \
-   /vendor/bin/hw/android.hardware.camera.provider@2.4-service
-   
+   /vendor/bin/hw/android.hardware.camera.provider@2.4-service \
+   mm-qcamera-daemon
+
 # Dexpreopt
 ifeq ($(HOST_OS),linux)
 ifneq ($(TARGET_BUILD_VARIANT),eng)
