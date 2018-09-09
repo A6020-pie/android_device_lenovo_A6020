@@ -32,4 +32,7 @@ TARGET_USE_SDCLANG=true
 # Exclude serif fonts for saving system.img size.
 EXCLUDE_SERIF_FONTS := true
 
+# Shipping API
+PRODUCT_SHIPPING_API_LEVEL := 21
+
 include $(LOCAL_PATH)/msm8916.mk
