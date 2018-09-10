@@ -128,6 +128,9 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     camera.device@3.2-impl \
 
+TARGET_PROCESS_SDK_VERSION_OVERRIDE := \
+	/system/vendor/bin/mm-qcamera-daemon=23
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
