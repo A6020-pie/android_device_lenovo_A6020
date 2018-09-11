@@ -272,6 +272,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine.conf:system/etc/thermal-engine.conf
 
+# Vendor security patch level
+VENDOR_SECURITY_PATCH := 2016-10-01
+
 # Wifi
 PRODUCT_PACKAGES += \
     dhcpcd.conf \

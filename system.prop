@@ -105,9 +105,6 @@ telephony.lteOnCdmaDevice=0
 # Time
 persist.timed.enable=true
 
-# Vendor security patch level
-ro.lineage.build.vendor_security_patch=2016-10-01
-
 # UI
 sys.use_fifo_ui=1
 
