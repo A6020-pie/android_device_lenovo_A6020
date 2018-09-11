@@ -23,6 +23,10 @@ $(call inherit-product, device/lenovo/A6020/device.mk)
 # Inherit some common LineageOS stuff.
 $(call inherit-product-if-exists, vendor/lineage/config/common_full_phone.mk)
 
+# Build Flags
+KBUILD_BUILD_USER := YashGarg
+KBUILD_BUILD_HOST := RaspberryPI
+
 # Boot animation
 TARGET_SCREEN_WIDTH := 1080
 TARGET_SCREEN_HEIGHT := 1920
