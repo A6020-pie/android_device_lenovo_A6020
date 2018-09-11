@@ -311,6 +311,9 @@ PRODUCT_PACKAGES += \
     init.qcom.post_boot.sh \
     ueventd.qcom.rc
 
+# System properties
+TARGET_SYSTEM_PROP += device/lenovo/A6020/system.prop
+
 # Targets for Runtime Resource Overlay
 PRODUCT_ENFORCE_RRO_TARGETS := \
     framework-res
