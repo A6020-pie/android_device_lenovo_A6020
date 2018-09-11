@@ -236,7 +236,7 @@ PRODUCT_PACKAGES += \
     libbson \
     libshim_gui \
     libshim_atomic \
-    Snap\
+    Camera2
 
 # GPS
 PRODUCT_PACKAGES += \
