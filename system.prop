@@ -6,31 +6,34 @@ dalvik.vm.dex2oat-threads=4
 dalvik.vm.image-dex2oat-threads=4
 
 # Audio
-ro.vendor.audio.sdk.fluencetype=fluence
-ro.vendor.audio.sdk.ssr=false
-persist.vendor.audio.fluence.voicecall=true
-persist.vendor.audio.fluence.voicerec=false
-persist.vendor.audio.fluence.speaker=false
-vendor.voice.path.for.pcm.voip=true
+ro.audio.flinger_standbytime_ms=300
+persist.audio.fluence.mode=endfire
+persist.vendor.audio.fluence.mode=endfire
+ro.ril.enable.amr.wideband=1
 vidc.enc.narrow.searchrange=1
-vendor.audio.tunnel.encode = false
 vendor.voice.playback.conc.disabled=true
 vendor.voice.record.conc.disabled=true
 vendor.voice.voip.conc.disabled=true
-
-# Audio offload
 af.fast_track_multiplier=1
 audio.deep_buffer.media=true
-vendor.audio.offload.buffer.size.kb=64
-vendor.audio.offload.gapless.enabled=true
 vendor.audio_hal.period_size=192
-audio.offload.min.duration.secs=30
 audio.offload.pcm.16bit.enable=true
 audio.offload.pcm.24bit.enable=false
 audio.offload.video=true
 audio.offload.disable=1
 av.offload.enable=true
 vendor.audio.dolby.ds2.enabled=true
+audio.offload.min.duration.secs=30
+persist.vendor.audio.fluence.voicecall=true
+persist.vendor.audio.fluence.voicerec=false
+persist.vendor.audio.fluence.speaker=true
+ro.vendor.audio.sdk.ssr=false
+ro.vendor.audio.sdk.fluencetype=fluence
+ro.fm.transmitter=false
+vendor.audio.tunnel.encode=false
+vendor.audio.offload.buffer.size.kb=64
+vendor.audio.offload.gapless.enabled=true
+vendor.voice.path.for.pcm.voip=true
 
 # Bluetooth
 qcom.bluetooth.soc=smd
